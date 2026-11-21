@@ -4,9 +4,9 @@
 
 | Anggota | NIM | Bagian yang dikerjakan |
 |---|---|---|
-| Navanza Varel | [NIM] | [misalnya EDA dan pembersihan data] |
-| Melinda Azalia Fausta | 2407608 | [misalnya model dan evaluasi] |
-| [nama] | [NIM] | [misalnya API dan aplikasi] |
+| Navanza Varel | 2409181 | [Data dan model: pemeriksaan dan pembersihan data, EDA, fitur turunan (src/features.py), baseline dan model final, pemilihan threshold dari biaya, notebook, src/train.py, artifacts] |
+| Melinda Azalia Fausta | 2407608 | [	Aplikasi dan penyajian: app/predictor.py, API FastAPI, aplikasi Streamlit, pengujian (tests/), deploy dan repositori GitHub, penyusunan laporan, video] |
+
 
 ## Masalah dan pengguna
 
