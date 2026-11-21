@@ -1,6 +1,8 @@
 # Laporan Kasus 01 · Pengendalian Mutu *Injection Molding*
 
-Tim [nama tim] · [nama anggota dan NIM]
+Tim 01 
+Navanza Varel 2409181
+Melinda Azalia Fausta 2407608 
 
 ## 1. Masalah
 
