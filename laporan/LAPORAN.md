@@ -123,6 +123,6 @@ Bila versi scikit-learn di tempat aplikasi dijalankan berbeda dari versi saat mo
 
 ## Lampiran
 
-- Tautan repositori: [ ] · aplikasi: [ ] · video: [ ]
+- Tautan repositori: [https://github.com/melindaazalia-code/mkb-kasus01-injection-moldingg/blob/main/README.md ] · aplikasi: [https://mkb-kasus01-injection-moldingg-syjvmepvrmsdcq4khzpory.streamlit.app/ ] · video: [ ]
 - Pembagian kerja: [diisi tim]
 - Penggunaan asisten AI: [diisi tim sendiri sesuai kenyataan; sebutkan bagian mana saja (misalnya kode pembersihan, pelatihan model, aplikasi, draf laporan) dan apa yang diperiksa atau diubah tim]
