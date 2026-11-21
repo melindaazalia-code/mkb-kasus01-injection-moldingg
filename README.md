@@ -1,4 +1,4 @@
-# Prediksi Cacat *Injection Molding* · Tim [nama tim]
+# Prediksi Cacat *Injection Molding* · Tim 01
 
 **Kasus:** 01 · Pengendalian mutu *injection molding* · **Aplikasi:** [https://mkb-kasus01-injection-moldingg-syjvmepvrmsdcq4khzpory.streamlit.app/](https://mkb-kasus01-injection-moldingg-syjvmepvrmsdcq4khzpory.streamlit.app/) · **Video:** [tautan video]
 
