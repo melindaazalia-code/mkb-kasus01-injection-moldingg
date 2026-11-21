@@ -126,6 +126,8 @@ Bila versi scikit-learn di tempat aplikasi dijalankan berbeda dari versi saat mo
 ## Lampiran
 
 - Tautan repositori: [https://github.com/melindaazalia-code/mkb-kasus01-injection-moldingg/blob/main/README.md ] · aplikasi: [https://mkb-kasus01-injection-moldingg-syjvmepvrmsdcq4khzpory.streamlit.app/ ] · video: [ ]
-- Pembagian kerja: | Navanza Varel | 2409181 | [Data dan model: pemeriksaan dan pembersihan data, EDA, fitur turunan (src/features.py), baseline dan model final, pemilihan threshold dari biaya, notebook, src/train.py, artifacts] |
-| Melinda Azalia Fausta | 2407608 | Aplikasi dan penyajian: app/predictor.py, API FastAPI, aplikasi Streamlit, pengujian (tests/), deploy dan repositori GitHub, penyusunan laporan, video |
-- Penggunaan asisten AI: [diisi tim sendiri sesuai kenyataan; sebutkan bagian mana saja (misalnya kode pembersihan, pelatihan model, aplikasi, draf laporan) dan apa yang diperiksa atau diubah tim]
+- Pembagian kerja: Navanza Varel | 2409181  [Data dan model: pemeriksaan dan pembersihan data, EDA, fitur turunan (src/features.py), baseline dan model final, pemilihan threshold dari biaya, notebook, src/train.py, artifacts]
+- 
+  Melinda Azalia Fausta | 2407608  Aplikasi dan penyajian: app/predictor.py, API FastAPI, aplikasi Streamlit, pengujian (tests/), deploy dan repositori GitHub, penyusunan laporan, video
+  
+- Penggunaan asisten AI: Kami memakai Claude (Anthropic) untuk (1) memeriksa data mentah dan menyusun aturan pembersihannya; (2) menulis kode awal src/features.py, src/train.py, notebook, app/predictor.py, API FastAPI, aplikasi Streamlit, dan tests/; serta (3) menyusun draf README, laporan, dan diagram arsitektur. Yang kami kerjakan sendiri: menjalankan dan memperbaiki notebook di Google Colab (termasuk menyesuaikan jalur berkas), menjalankan ulang model dan memeriksa angkanya, membuat repositori GitHub, dan men-deploy aplikasi ke Streamlit Community Cloud.
