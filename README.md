@@ -1,12 +1,12 @@
-# Prediksi Cacat *Injection Molding* · Tim [nama tim]
+Prediksi Cacat *Injection Molding* · Tim 01
 
-**Kasus:** 01 · Pengendalian mutu *injection molding* · **Aplikasi:** [tautan aplikasi, isi setelah di-*deploy*] · **Video:** [tautan video]
+**Kasus:** 01 · Pengendalian mutu *injection molding* · **Aplikasi:** https://mkb-kasus01-injection-moldingg-syjvmepvrmsdcq4khzpory.streamlit.app/ · **Video:** [tautan video]
 
 | Anggota | NIM | Bagian yang dikerjakan |
 |---|---|---|
-| [nama] | [NIM] | [misalnya EDA dan pembersihan data] |
-| [nama] | [NIM] | [misalnya model dan evaluasi] |
-| [nama] | [NIM] | [misalnya API dan aplikasi] |
+| Melinda Azalia Fausta | 2407608 | [misalnya EDA dan pembersihan data] |
+| Navanza Varel | [NIM] | [misalnya model dan evaluasi] |
+
 
 ## Masalah dan pengguna
 
@@ -95,13 +95,4 @@ laporan/        LAPORAN.md dan gambar
 - Model memprediksi, tidak membuktikan sebab; saran tindakan dibuat dari aturan sederhana berdasarkan pola data dan perlu divalidasi tim proses.
 - Suhu leleh IM-03 rata-rata +6 °C di atas standar dan cacatnya dua kali mesin lain; belum diketahui apakah sensor atau suhunya yang menyimpang.
 
-## Daftar periksa sebelum dikumpulkan
 
-- [ ] Repositori bersifat publik dan setiap anggota memiliki *commit*
-- [x] *Notebook* dapat dijalankan ulang dari awal sampai akhir tanpa galat (sudah dijalankan di Colab)
-- [x] *Baseline* wajib dilaporkan dan dibandingkan
-- [x] Data *test* hanya dibuka di akhir (setelah model dan *threshold* ditetapkan dari *validation*)
-- [x] `artifacts/metadata.json` berisi versi model, fitur masukan, *threshold*, dan metrik
-- [ ] Aplikasi dapat dibuka orang lain melalui tautan, termasuk dari ponsel
-- [x] Aplikasi tidak berhenti mendadak ketika menerima masukan yang tidak wajar (diuji di `tests/`; coba juga langsung di aplikasi setelah *deploy*)
-- [ ] Laporan paling banyak 6 halaman dan video paling lama 5 menit
