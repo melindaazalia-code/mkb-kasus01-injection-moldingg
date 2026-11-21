@@ -1,7 +1,9 @@
 # Laporan Kasus 01 · Pengendalian Mutu *Injection Molding*
 
 Tim 01 
+
 Navanza Varel 2409181
+
 Melinda Azalia Fausta 2407608 
 
 ## 1. Masalah
@@ -124,5 +126,6 @@ Bila versi scikit-learn di tempat aplikasi dijalankan berbeda dari versi saat mo
 ## Lampiran
 
 - Tautan repositori: [https://github.com/melindaazalia-code/mkb-kasus01-injection-moldingg/blob/main/README.md ] · aplikasi: [https://mkb-kasus01-injection-moldingg-syjvmepvrmsdcq4khzpory.streamlit.app/ ] · video: [ ]
-- Pembagian kerja: [diisi tim]
+- Pembagian kerja: | Navanza Varel | 2409181 | [Data dan model: pemeriksaan dan pembersihan data, EDA, fitur turunan (src/features.py), baseline dan model final, pemilihan threshold dari biaya, notebook, src/train.py, artifacts] |
+| Melinda Azalia Fausta | 2407608 | Aplikasi dan penyajian: app/predictor.py, API FastAPI, aplikasi Streamlit, pengujian (tests/), deploy dan repositori GitHub, penyusunan laporan, video |
 - Penggunaan asisten AI: [diisi tim sendiri sesuai kenyataan; sebutkan bagian mana saja (misalnya kode pembersihan, pelatihan model, aplikasi, draf laporan) dan apa yang diperiksa atau diubah tim]
