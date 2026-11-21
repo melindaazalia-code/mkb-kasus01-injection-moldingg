@@ -130,4 +130,6 @@ Bila versi scikit-learn di tempat aplikasi dijalankan berbeda dari versi saat mo
 - 
   Melinda Azalia Fausta | 2407608  Aplikasi dan penyajian: app/predictor.py, API FastAPI, aplikasi Streamlit, pengujian (tests/), deploy dan repositori GitHub, penyusunan laporan, video
   
-- Penggunaan asisten AI: Kami memakai Claude (Anthropic) untuk (1) memeriksa data mentah dan menyusun aturan pembersihannya; (2) menulis kode awal src/features.py, src/train.py, notebook, app/predictor.py, API FastAPI, aplikasi Streamlit, dan tests/; serta (3) menyusun draf README, laporan, dan diagram arsitektur. Yang kami kerjakan sendiri: menjalankan dan memperbaiki notebook di Google Colab (termasuk menyesuaikan jalur berkas), menjalankan ulang model dan memeriksa angkanya, membuat repositori GitHub, dan men-deploy aplikasi ke Streamlit Community Cloud.
+- Penggunaan asisten AI: Kami memakai Claude (Anthropic) untuk memeriksa data mentah dan menyusun aturan pembersihannya, menulis kode awal src/features.py, src/train.py, notebook, app/predictor.py, API FastAPI, aplikasi Streamlit, dan tests.
+
+- Yang kami kerjakan sendiri: menjalankan dan memperbaiki notebook di Google Colab (termasuk menyesuaikan jalur berkas), menjalankan ulang model dan memeriksa angkanya, membuat repositori GitHub, dan men-deploy aplikasi ke Streamlit Community Cloud.
