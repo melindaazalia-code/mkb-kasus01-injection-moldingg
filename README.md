@@ -1,12 +1,12 @@
-Prediksi Cacat *Injection Molding* · Tim 01
+# Prediksi Cacat *Injection Molding* · Tim [nama tim]
 
-**Kasus:** 01 · Pengendalian mutu *injection molding* · **Aplikasi:** https://mkb-kasus01-injection-moldingg-syjvmepvrmsdcq4khzpory.streamlit.app/ · **Video:** [tautan video]
+**Kasus:** 01 · Pengendalian mutu *injection molding* · **Aplikasi:** [https://mkb-kasus01-injection-moldingg-syjvmepvrmsdcq4khzpory.streamlit.app/](https://mkb-kasus01-injection-moldingg-syjvmepvrmsdcq4khzpory.streamlit.app/) · **Video:** [tautan video]
 
 | Anggota | NIM | Bagian yang dikerjakan |
 |---|---|---|
-| Melinda Azalia Fausta | 2407608 | [misalnya EDA dan pembersihan data] |
-| Navanza Varel | [NIM] | [misalnya model dan evaluasi] |
-
+| Navanza Varel | [NIM] | [misalnya EDA dan pembersihan data] |
+| Melinda Azalia Fausta | 2407608 | [misalnya model dan evaluasi] |
+| [nama] | [NIM] | [misalnya API dan aplikasi] |
 
 ## Masalah dan pengguna
 
@@ -45,10 +45,8 @@ Data dibagi *stratified* 60/20/20 (15.000 / 5.000 / 5.000, masing-masing 7,76% c
 
 ## Aplikasi
 
-Dua cara memakai model, keduanya lewat `app/predictor.py` (validasi masukan, probabilitas, keputusan, saran tindakan):
-
-- **Aplikasi operator (Streamlit):** isi mesin, bahan, shift, dan parameter proses; keluarannya probabilitas cacat, keputusan (lolos / sisihkan), peringatan, dan saran tindakan beserta perkiraan probabilitas bila tindakan dilakukan. Masukan kosong, bukan angka, atau mustahil ditolak dengan pesan yang jelas, tidak membuat aplikasi mati. Ada pilihan "Contoh masukan" untuk mencoba.
-- **API (FastAPI):** `POST /predict`, `GET /info`, `GET /health`, dokumentasi otomatis di `/docs`. Masukan tidak valid mengembalikan status 422 berisi daftar galat.
+- **Aplikasi operator (Streamlit), sudah di-*deploy*** (tautan di bagian atas). Operator mengisi mesin, bahan, shift, dan parameter proses; keluarannya probabilitas cacat, keputusan (lolos / sisihkan), peringatan, dan saran tindakan beserta perkiraan probabilitas bila tindakan dilakukan. Aplikasi memanggil model **langsung** lewat `app/predictor.py` (validasi masukan, prediksi, saran), tanpa melalui API. Masukan kosong, bukan angka, atau mustahil ditolak dengan pesan yang jelas, tidak membuat aplikasi mati. Ada pilihan "Contoh masukan" untuk mencoba.
+- **API (FastAPI), hanya dijalankan lokal, tidak di-*deploy*.** Disertakan sesuai struktur repositori pada templat tugas (`app/api/main.py`). Memakai `app/predictor.py` yang sama: `POST /predict`, `GET /info`, `GET /health`, dokumentasi otomatis di `/docs`; masukan tidak valid mengembalikan status 422 berisi daftar galat.
 
 ## Cara menjalankan
 
@@ -70,7 +68,7 @@ Notebook menyimpan `model.joblib` dan `metadata.json` di `/content/artifacts/` p
 
 ### *Deploy* agar punya tautan
 
-Cara termudah memakai Streamlit Community Cloud: dorong repositori ke GitHub (publik), buka share.streamlit.io, pilih repositori ini, isi *Main file path* `app/ui/streamlit_app.py`. Tautan yang dihasilkan masuk ke bagian atas README. API tidak wajib di-*deploy* karena aplikasi memanggil model langsung.
+Cara termudah memakai Streamlit Community Cloud: dorong repositori ke GitHub (publik), buka share.streamlit.io, pilih repositori ini, isi *Main file path* `app/ui/streamlit_app.py`. Aplikasi sudah di-*deploy* dengan cara ini (tautan di bagian atas README). API tidak wajib di-*deploy* karena aplikasi memanggil model langsung.
 
 ## Struktur repositori
 
@@ -90,9 +88,8 @@ laporan/        LAPORAN.md dan gambar
 ## Keterbatasan
 
 - Tiap bagian data hanya berisi 388 komponen cacat, sehingga PR-AUC *test* bergeser sekitar ±0,04–0,05 karena sampel saja.
-- Model paling lemah pada PP (cacat hanya 3,3% dan pemicunya sedikit).
+- Model paling lemah pada PP (cacat hanya 3,7% dan pemicunya sedikit).
 - Data hanya dari 4 mesin dan 4 bulan; mesin, bahan, atau musim baru dapat menggeser pola. Aplikasi memberi peringatan bila masukan di luar rentang data latih.
 - Model memprediksi, tidak membuktikan sebab; saran tindakan dibuat dari aturan sederhana berdasarkan pola data dan perlu divalidasi tim proses.
 - Suhu leleh IM-03 rata-rata +6 °C di atas standar dan cacatnya dua kali mesin lain; belum diketahui apakah sensor atau suhunya yang menyimpang.
-
 
