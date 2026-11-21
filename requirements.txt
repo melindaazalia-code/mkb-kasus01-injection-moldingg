@@ -1,0 +1,11 @@
+# Catatan: scikit-learn harus SAMA dengan versi saat model dilatih (lihat "sklearn" di artifacts/metadata.json).
+# Jika artifact dibuat di Google Colab, jalankan di Colab:  import sklearn; print(sklearn.__version__)  lalu tulis di sini, mis. scikit-learn==1.6.1
+# Jika berbeda, aplikasi tetap jalan: model dilatih ulang otomatis dari data/raw.csv saat aplikasi dinyalakan.
+pandas
+numpy
+scikit-learn
+joblib
+matplotlib
+fastapi
+uvicorn
+streamlit

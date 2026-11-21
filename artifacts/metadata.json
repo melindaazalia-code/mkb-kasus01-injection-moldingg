@@ -1,0 +1,83 @@
+{
+  "versi_model": "1.0.0",
+  "dilatih": "2026-11-20T11:27:45",
+  "algoritma": "HistGradientBoostingClassifier + fitur turunan (src/features.py)",
+  "hyperparameter": {
+    "learning_rate": 0.06,
+    "max_leaf_nodes": 8,
+    "min_samples_leaf": 60,
+    "l2_regularization": 3.0
+  },
+  "fitur_masukan": [
+    "suhu_leleh_C",
+    "suhu_cetakan_C",
+    "tekanan_injeksi_bar",
+    "kecepatan_injeksi_mm_s",
+    "waktu_pendinginan_s",
+    "waktu_siklus_s",
+    "kelembaban_bahan_pct",
+    "mesin",
+    "shift",
+    "bahan"
+  ],
+  "target": "cacat",
+  "threshold": 0.0325,
+  "asumsi_biaya_rp": {
+    "cacat_lolos": 500000,
+    "bagus_tersisih": 25000
+  },
+  "metrik": {
+    "baseline_pr_val": 0.48325014790960924,
+    "baseline_pr_test": 0.5364038754710408,
+    "final_pr_val": 0.6438444402875895,
+    "final_pr_test": 0.6955780717186958
+  },
+  "rentang_latih": {
+    "suhu_leleh_C": {
+      "min": 194.9,
+      "max": 336.9,
+      "p01": 203.8,
+      "p99": 325.50010000000003
+    },
+    "suhu_cetakan_C": {
+      "min": 8.0,
+      "max": 113.7,
+      "p01": 20.4,
+      "p99": 108.0
+    },
+    "tekanan_injeksi_bar": {
+      "min": 431.0,
+      "max": 1310.0,
+      "p01": 556.874,
+      "p99": 1243.0
+    },
+    "kecepatan_injeksi_mm_s": {
+      "min": 25.6,
+      "max": 139.2,
+      "p01": 32.899699999999996,
+      "p99": 125.60010000000001
+    },
+    "waktu_pendinginan_s": {
+      "min": 6.0,
+      "max": 35.1,
+      "p01": 6.0,
+      "p99": 30.5
+    },
+    "waktu_siklus_s": {
+      "min": 16.2,
+      "max": 50.0,
+      "p01": 18.5,
+      "p99": 46.1076000000001
+    },
+    "kelembaban_bahan_pct": {
+      "min": 0.0,
+      "max": 0.514,
+      "p01": 0.001,
+      "p99": 0.363
+    }
+  },
+  "seed": 42,
+  "sklearn": "1.9.1",
+  "python": "3.12.3",
+  "catatan": "Masukan mentah (kolom seperti raw.csv) harus lewat src.features.clean sebelum predict_proba."
+}
